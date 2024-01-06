@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box1{
+        border: 2px solid black;
+          width: 3cm;
+          height: 3cm;
+          margin-left: 48%;
+          border-radius: 20px;
+          margin-top: 2%;
+    }
+    /* for rotation only */
+    
+    #a{
+        background-color: yellow;
+    }
+    #a:hover{
+        transform: rotate(360deg);
+        transition-duration: 2s;
+    }
+
+    /* for tarnslation only */
+
+    #b{
+        background-color: green;
+
+    }
+    #b:hover{
+        transform: translate(2cm, 3cm);
+        transition: 2s;
+    }
+
+    /* for scale animation only */
+
+    #c{
+        background-color: red;
+    }
+    #c:hover{
+        transform: scale(1.3,1.3);
+        transition-duration: 2s;
+    }
+
+    /* for skew animation only */
+
+    #d{
+        background-color:rgb(32, 95, 232);
+    }
+    #d:hover{
+        transform: skew(30deg,-20deg);
+        transition: 3s;
+    }
+</style>
+</head>
+<body>
+      <div class="box1" id="a"></div>
+      <div class="box1" id="b"></div>
+      <div class="box1" id="c"></div>
+      <div class="box1" id="d"></div>
+</body>
+</html>
